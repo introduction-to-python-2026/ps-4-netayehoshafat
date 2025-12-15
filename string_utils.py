@@ -1,4 +1,6 @@
 def split_before_each_uppercases(formula):
+    if not formula:
+        return []
     split_formula = []
     start = 0
     for end in range(1, len(formula)):
